@@ -1,7 +1,7 @@
 # CyrillicPhonetic
 Pan-Cyrillic Phonetic Layout for Windows (supported languages: Russian, Belarusian, Ukrainian, Serbian, Macedonian)
 
-## Like Stankovski's Russian phonetic layout (https://github.com/stankovski/russian-phonetic-layout-windows10), this layout is similar to the Mac OS Russian phonetic layout. The Pan-Cyrillic additions are based on a DOS keyboard layout that I developed for vDosPlus XyWrite CP866X (see https://www.lexitec.fi/xywrite/utility.html).
+Like Stankovski's Russian phonetic layout (https://github.com/stankovski/russian-phonetic-layout-windows10), this layout is similar to the Mac OS Russian phonetic layout. The Pan-Cyrillic additions are based on a DOS keyboard layout that I developed for vDosPlus XyWrite CP866X (see https://www.lexitec.fi/xywrite/utility.html).
 
 ## Install
 
