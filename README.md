@@ -11,6 +11,7 @@ This is a layout that is designed on top of a US QWERTY keyboard layout. Like St
 
 ## Build
 
-1. Install `Microsoft Keyboard Layout Creator 1.4` from Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=22339
-2. Open `src\Russian Phonetic.klc` using "Keyboard Layout Creator"
-3. Go to "Project > Build DLL"
+1. Install the current version (2020) of `Microsoft Keyboard Layout Creator 1.4` from Microsoft https://www.microsoft.com/en-us/download/details.aspx?id=102134
+2. Open (and optionally edit) `src\CyrPhone.klc` using "Keyboard Layout Creator"
+3. Or edit the source file with a text editor (advanced users only!)
+4. In "Keyboard Layout Creator", go to "Project > Build DLL"
