@@ -14,8 +14,9 @@ Keyboard conflicts: Please note that some applications may use default global Al
 
 ## Uninstall
 
-1. Run setup.exe and select Remove
-2. Wait until a dialog appears stating that the uninstall is complete
+1. Deselect the layout to be uninstalled by changing to another layout
+2. Run setup.exe and select Remove
+3. Wait until a dialog appears stating that the uninstall is complete
 
 ## Build
 
