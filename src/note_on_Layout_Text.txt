@@ -1,0 +1,10 @@
+Check "Project, Properties..." before building a keyboard DLL.
+If MS Keyboard Layout Creator issues a warning about the keyboard description being "identical to another keyboard on this machine", it means that there is a Registry entry (numerical layout) in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\ that has a similar string value under "Layout Text". As a quick fix, renaming or deleting this entry enables you to build the DLL with the same name. Normally, you should, of course, delete the layout using a normal uninstall procedure (the layout installer!) before trying the build process (Registry entry plus DLLs in System32 and SysWOW64), or build the DLL with another name. Consider backing up the Registry and System32 and SysWOW64 folder contents before proceeding with any manual operations.
+
+About layout numbers:
+0xxxxxxx layouts belong to native Windows
+axxxxxxx layouts belong to MSKLC
+bxxxxxxx layouts belong to KbdEdit (a commercial layout editor)
+
+
+
