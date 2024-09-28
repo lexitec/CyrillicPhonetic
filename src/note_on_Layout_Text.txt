@@ -1,10 +1,19 @@
-Check "Project, Properties..." before building a keyboard DLL.
-If MS Keyboard Layout Creator issues a warning about the keyboard description being "identical to another keyboard on this machine", it means that there is a Registry entry (numerical layout) in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\ that has a similar string value under "Layout Text". As a quick fix, renaming or deleting this entry enables you to build the DLL with the same name. Normally, you should, of course, delete the layout using a normal uninstall procedure (the layout installer!) before trying the build process (Registry entry plus DLLs in System32 and SysWOW64), or build the DLL with another name. Consider backing up the Registry and System32 and SysWOW64 folder contents before proceeding with any manual operations.
+If you have used the installer to install CyrPhone layout, you cannot automatically build CyrPhone on the same machine.
 
-About layout numbers:
+First check "Project, Properties..." before trying to build a keyboard DLL.
+
+If MS Keyboard Layout Creator issues a warning about the keyboard description being "identical to another keyboard on this machine", it means that there is a Registry entry (numerical layout) in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\ that has a similar string value under "Layout Text". 
+
+Normally, you should, of course, delete the layout using a normal uninstall procedure (the layout installer!) before trying the build process (Registry entry plus DLLs in System32 and SysWOW64) with the same name, or build the DLL with another name. Consider backing up the Registry and System32 and SysWOW64 folder contents before proceeding with any manual operations.
+
+However, if you want to make a modified installer with the same name, you can rename the layout's "Layout Text" value (i.e. "Cyrillic Phonetic") to something else to build a new version of the DLL with the same name. Restore the Registry to the previous state after the building process. Then you should be able to update your current installation with the new installer or use it to deploy the layout elsewhere. 
+
+N.B. Layout numbers:
 0xxxxxxx layouts belong to native Windows
 axxxxxxx layouts belong to MSKLC
 bxxxxxxx layouts belong to KbdEdit (a commercial layout editor)
 
+This CyrPhone layout has the form:
+axxx0419 where 0419 is Russian locale
 
 
