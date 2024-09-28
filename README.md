@@ -1,5 +1,5 @@
 # CyrillicPhonetic
-This work is licensed under Creative Commons Attribution-NonCommercial 4.0 International/
+This work is licensed under Creative Commons Attribution-NonCommercial 4.0 International.
 
 Pan-Cyrillic phonetic keyboard layout for Windows. Supported languages: Russian, Belarusian, Ukrainian, Serbian, and Macedonian.
 
@@ -12,7 +12,7 @@ Keyboard conflicts: Please note that some applications may use default global Al
 1. Check first that you have Russian or other Slavic locale installed to have language support files
 2. Download CyrPhone-installer.zip from Releases
 3. Unzip it and run setup.exe
-4. On Windows 10, restart Windows before using the new layout
+4. On Windows 10/11, restart Windows before using the new layout
 5. Switch to the layout (Win+spacebar)
 
 ## Uninstall
@@ -27,3 +27,4 @@ Keyboard conflicts: Please note that some applications may use default global Al
 2. Open (and optionally edit) `src\CyrPhone.klc` using "Keyboard Layout Creator"
 3. Or edit the source file with a text editor (advanced users only!)
 4. In "Keyboard Layout Creator", go to "Project > Build DLL"
+5. If you are unable to build, read the note_on_Layout_Text.txt in src folder to resolve the issue.
