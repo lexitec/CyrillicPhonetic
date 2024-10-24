@@ -29,4 +29,4 @@ Keyboard conflicts: Please note that some applications may use default global Al
 2. Open (and optionally edit) `src\CyrPhone.klc` using "Keyboard Layout Creator"
 3. Or edit the source file with a text editor (advanced users only!)
 4. In "Keyboard Layout Creator", go to "Project > Build DLL"
-5. If you are unable to build and have installed using the CyrPhone-installer, rerun the installer and select Uninstall. See also technical_note_on_building.txt when for more details.
+5. If you are unable to build and have installed using the CyrPhone-installer, rerun the installer and select Uninstall. See also technical_note_on_building.txt for more details.
