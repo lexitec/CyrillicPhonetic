@@ -1,12 +1,14 @@
-If you have used the installer to install CyrPhone layout, you cannot automatically build CyrPhone on the same machine.
+IMPORTANT: If you have used the installer to install CyrPhone layout, you cannot automatically build CyrPhone on the same machine.
+Before building a new version, rerun the installer and select Uninstall. There is no need to do any manual cleanup when using the installer.
 
-First check "Project, Properties..." before trying to build a keyboard DLL.
+Manual cleanup would involve these operations (Consider backing up the Registry and System32 and SysWOW64 folder contents before proceeding with any manual operations):
+1) Check "Project, Properties..." before trying to build a keyboard DLL. 
+2) Delete the keyboard DLLs in System32 (rename the file to remove it from the folder) and SysWOW64
+3) If MS Keyboard Layout Creator issues a warning about the keyboard description being "identical to another keyboard on this machine", it means that there still is a Registry entry (numerical layout) in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\ that has a similar string value under "Layout Text". Rename the layout's "Layout Text" value (i.e. "Cyrillic Phonetic") to something else to build a new version of the DLL with the same name.
 
-If MS Keyboard Layout Creator issues a warning about the keyboard description being "identical to another keyboard on this machine", it means that there is a Registry entry (numerical layout) in HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layouts\ that has a similar string value under "Layout Text". 
+If you want to keep the original version, you can build the DLL with another name. 
 
-Normally, you should, of course, delete the layout using a normal uninstall procedure (the layout installer!) before trying the build process (Registry entry plus DLLs in System32 and SysWOW64) with the same name, or build the DLL with another name. Consider backing up the Registry and System32 and SysWOW64 folder contents before proceeding with any manual operations.
-
-However, if you want to make a modified installer with the same name, you can rename the layout's "Layout Text" value (i.e. "Cyrillic Phonetic") to something else to build a new version of the DLL with the same name. Restore the Registry to the previous state after the building process. Then you should be able to update your current installation with the new installer or use it to deploy the layout elsewhere. 
+If you have made a modified installer with the same name, you should be able to update any previous installation with the new installer. 
 
 N.B. Layout numbers:
 0xxxxxxx layouts belong to native Windows
